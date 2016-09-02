@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0076C9">
+
+    <TableLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <CheckBox
+                android:layout_weight="1"
+                android:shadowColor="#A12F2F"
+                android:id="@+id/fade"
+                android:textColor="#ffffff"
+                android:checked="true"
+                android:text="fade"/>
+
+            <CheckBox
+                android:layout_weight="1"
+                android:shadowColor="#A12F2F"
+                android:checked="true"
+                android:id="@+id/boundary"
+                android:textColor="#ffffff"
+                android:text="boundary"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp">
+            <Button
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content"
+                android:text="One"
+                android:onClick="one"/>
+            <Button
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content"
+                android:text="Two"
+                android:onClick="two"/>
+            <Button
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content"
+                android:text="Three"
+                android:onClick="three"/>
+            <Button
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content"
+                android:text="Four"
+                android:onClick="four"/>
+        </TableRow>
+
+
+    </TableLayout>
+
+
+
+
+
+</LinearLayout>

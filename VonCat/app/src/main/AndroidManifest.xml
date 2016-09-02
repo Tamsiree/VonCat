@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.von.voncat">
+
+    <!-- 修改声音设置 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- 外部存储 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 打开闪光灯 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <!-- 许可振动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 许可使用照相机 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 许可调用相机硬件 -->
+    <uses-feature android:name="android.hardware.camera" />
+    <!-- 许可调用相机自动对焦 -->
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 许可拨打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 许可连接网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 访问网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 读取默认设置 -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!-- 唤醒锁 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 改变WIFI状态 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 访问WIFI状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获得TASK任务栈 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 写设置 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- 获取手机录音机使用权限，听写、识别、语义理解需要用到此权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 允许程序改变网络连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <!-- 用于读取手机当前的状态 权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- 读取联系人权限，上传联系人需要用到此权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <application
+        android:name=".VonApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".module.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".module.ui.UIMainActivity"
+            android:label="@string/title_activity_uimain" />
+        <activity
+            android:name=".module.ui.dialog.DialogMainActivity"
+            android:label="@string/title_activity_dialog_main" />
+        <activity
+            android:name=".module.function.FunctionMainActivity"
+            android:label="@string/title_activity_function_main" />
+        <activity
+            android:name=".module.function.WebViewMainActivity"
+            android:label="@string/title_activity_web_view_main" />
+        <activity
+            android:name=".module.function.WebViewBaseActivity"
+            android:label="@string/title_activity_web_view_base" />
+        <activity
+            android:name=".module.function.WheelHorizontal.example.WheelHorizontalActivity"
+            android:label="@string/title_activity_wheel_horizontal" />
+        <activity
+            android:name=".module.ui.card.CardUIMainActivity"
+            android:label="@string/title_activity_card_uimain" />
+        <activity
+            android:name=".module.ui.card.cardui.example.CardUIActivity"
+            android:label="@string/title_activity_card_uimain" />
+        <activity
+            android:name=".module.ui.SlidingDrawer.SlidingDrawerSingleActivity"
+            android:label="@string/title_activity_sliding_drawer_single" />
+        <activity
+            android:name=".module.ui.progress.ProgressMainActivity"
+            android:label="@string/title_activity_progress_main" />
+        <activity
+            android:name=".module.ui.progress.RoundProgressBar.example.RoundProgressBarActivity"
+            android:label="@string/title_activity_round_progress_bar" />
+        <activity
+            android:name=".module.function.ScannerCode.ScanerCodeActivity"
+            android:label="ScanerCodeActivity" />
+        <activity
+            android:name=".module.function.FileToBitmapActivity"
+            android:label="@string/title_activity_file_to_bitmap" />
+        <activity
+            android:name=".module.ui.listview.DragDelListView.DragDelListViewActivity"
+            android:label="@string/title_activity_drag_del_list_view" />
+        <activity
+            android:name=".module.function.CreateQRCode.CreateQRCodeActivity"
+            android:label="@string/title_activity_create_qrcode" />
+        <activity
+            android:name=".module.ui.progress.SingleProgressActivity"
+            android:label="@string/title_activity_single_progress" />
+        <activity
+            android:name=".module.function.CircleHead.CircleHeadActivity"
+            android:label="@string/title_activity_circle_head" />
+        <activity
+            android:name=".module.ui.card.MultiCard.MultiCardActivity"
+            android:label="@string/title_activity_multi_card" />
+        <activity
+            android:name=".module.function.speech.SpeechActivity"
+            android:label="@string/title_activity_speech" />
+        <activity
+            android:name=".module.ui.viewgroup.VonViewGroupActivity"
+            android:label="@string/title_activity_von_view_group" />
+        <activity android:name=".module.forum.ForumActivity" />
+        <activity android:name=".module.ui.listview.ListViewMainActivity" />
+        <activity android:name=".module.forum.StudyBBSActivity" />
+        <activity android:name=".module.forum.UIBBSActivity" />
+        <activity android:name=".module.forum.ToolsBBSActivity" />
+        <activity android:name=".module.contact.ContactActivity"></activity>
+    </application>
+
+</manifest>

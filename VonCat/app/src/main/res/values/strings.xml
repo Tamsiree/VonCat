@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">VonCat</string>
+    <string name="change_layout">更换布局</string>
+    <string name="hello_world">Hello World</string>
+    <string name="title_activity_uimain">UIMainActivity</string>
+    <string name="title_activity_dialog_main">DialogMainActivity</string>
+    <string name="title_activity_dialog_loading_progress_acfun_video">DialogLoadingProgressAcfunVideoActivity</string>
+    <string name="title_activity_function_main">FunctionMainActivity</string>
+    <string name="title_activity_web_view_main">WebViewMainActivity</string>
+    <string name="title_activity_web_view_base">WebViewBaseActivity</string>
+    <string name="title_activity_wheel_horizontal">WheelHorizontalActivity</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_card_uimain">CardUIMainActivity</string>
+    <string name="title_activity_sliding_drawer_single">SlidingDrawerSingleActivity</string>
+    <string name="title_activity_progress_main">ProgressMainActivity</string>
+    <string name="title_activity_round_progress_bar">RoundProgressBarActivity</string>
+    <string name="title_activity_file_to_bitmap">FileToBitmapActivity</string>
+    <string name="title_activity_drag_del_list_view">DragDelListViewActivity</string>
+    <string name="title_activity_create_qrcode">CreateQRCodeActivity</string>
+    <string name="title_activity_single_progress">SingleProgressActivity</string>
+    <string name="title_activity_circle_head">CircleHeadActivity</string>
+    <string name="title_activity_multi_card">MultiCardActivity</string>
+    <string name="title_activity_speech">SpeechActivity</string>
+
+
+    <!-- 请替换成在语音云官网申请的appid -->
+    <string name="app_id">56f4cd01</string>
+    <!-- 听写 -->
+    <string name="text_begin">请开始说话…</string>
+    <string name="text_begin_recognizer">开始音频流识别</string>
+    <string name="text_upload_contacts">上传联系人</string>
+    <string name="text_upload_userwords">上传用户词表</string>
+    <string name="text_upload_success">上传成功</string>
+    <string name="text_userword_empty">词表下载失败或内容为空</string>
+    <string name="text_download_success">下载成功</string>
+    <string name="pref_key_iat_show">iat_show</string>
+    <string name="pref_title_iat_show">显示听写界面</string>
+    <string name="pref_title_iat_dwa">结果动态修正</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_splash">超级钱包BOSS版</string>
+    <string name="title_activity_login_forget_password">LoginForgetPasswordActivity</string>
+    <string name="title_activity_lead">LeadActivity</string>
+    <string name="title_activity_consume">ConsumeActivity</string>
+    <string name="title_activity_sett_level">SettLevelActivity</string>
+    <string name="title_activity_member_card_add">MemberCardAddActivity</string>
+    <string name="title_activity_member_settings">MemberSettingsActivity</string>
+    <string name="title_activity_member_card">MemberCardActivity</string>
+    <string name="title_activity_von_view_group">VonViewGroupActivity</string>
+
+</resources>
